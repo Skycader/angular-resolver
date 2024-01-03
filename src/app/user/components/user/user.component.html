@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-content>
+    <p>
+      {{ user.name }}
+    </p>
+    <p class="details">
+      <button mat-raised-button color="primary">
+        <a [routerLink]="['user', user.name]" class="details">Details</a>
+      </button>
+    </p>
+  </mat-card-content>
+</mat-card>

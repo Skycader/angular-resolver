@@ -1,0 +1,8 @@
+<p *ngIf="users$ | async as user; else loadingRef"></p>
+<ng-template #loadingRef>
+  <span></span>
+</ng-template>
+
+<ul>
+  <app-user *ngFor="let user of users$ | async" [user]="user"></app-user>
+</ul>

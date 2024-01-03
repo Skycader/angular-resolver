@@ -1,6 +1,6 @@
 <p *ngIf="users$ | async as user; else loadingRef"></p>
 <ng-template #loadingRef>
-  <span></span>
+  <span>Loading...</span>
 </ng-template>
 
 <ul>
